@@ -1,0 +1,17 @@
+.footer {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  color: white;
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  span {
+    color: gold;
+  }
+}

@@ -1,0 +1,18 @@
+.header {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  color: white;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+}
