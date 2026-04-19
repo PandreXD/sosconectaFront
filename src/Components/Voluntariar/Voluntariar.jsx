@@ -1,32 +1,35 @@
-import { useNavigate } from "react-router-dom";
 import styles from "./Voluntariar.module.scss";
-import cardImage from "../../assets/voluntarios1.jpg";
+import cardImg from "../../assets/voluntarios1.jpg";
+import footerImg from "../../assets/footer1.jpg";
 
 export default function Voluntariar() {
-  const navigate = useNavigate(); // 👈 fica AQUI dentro
-
   return (
-    <section className={styles.section}>
-      
-      <article className={styles.card}>
-        
-        <img src={cardImage} alt="Voluntários" />
+    <section className={styles.container}>
+      <div className={styles.texto}>
+        <h2>
+          Durante <span>enchentes</span>, muitas pessoas querem ajudar...
+        </h2>
+        <p>
+          Mas não sabem <span>onde ir</span> ou <span>o que fazer</span>.
+        </p>
+      </div>
+
+      <div className={styles.card}>
+        <div
+          className={styles.image}
+          style={{ backgroundImage: `url(${cardImg})` }}
+        ></div>
 
         <div className={styles.content}>
-          <h2>Quero me voluntariar</h2>
-
           <p>
-            Cadastre-se como voluntário e ajude quem precisa.
+            Cadastre-se como <span>voluntário</span> e seja direcionado para onde sua ajuda fará diferença real.
           </p>
 
-          {/* 👇 SÓ O BOTÃO MUDA */}
-          <button onClick={() => navigate("/ajudar")}>
-            Quero Ajudar
-          </button>
-
+          <button>Quero Ajudar</button>
         </div>
-      </article>
+      </div>
 
+     
     </section>
   );
 }

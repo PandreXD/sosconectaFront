@@ -1,14 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Ajudar from "./pages/Ajudar";
+import Header from "./Components/Header/Header";
+import Hero from "./Components/Hero/Hero";
+import Voluntariar from "./Components/Voluntariar/Voluntariar";
+import Footer from "./Components/Footer/Footer";
+import "./global.scss";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/ajudar" element={<Ajudar />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Header />
+      <Voluntariar />
+      <Footer />
+    </>
   );
 }

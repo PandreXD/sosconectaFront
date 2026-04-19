@@ -1,17 +1,16 @@
 import styles from "./Footer.module.scss";
-import bg from "../../assets/footer1.jpg";
+import footerImg from "../../assets/footer1.jpg";
 
 export default function Footer() {
   return (
     <footer
-      className={styles.footer}
-      style={{ backgroundImage: `url(${bg})` }}
+      className={styles.banner}
+      style={{ backgroundImage: `url(${footerImg})` }}
     >
-      <h2>
-        Seja parte da solução.
-        <br />
-        <span>Seja um voluntário.</span>
-      </h2>
+      <div className={styles.overlay}>
+        <h3>Seja parte da solução.</h3>
+        <h2>Seja um voluntário.</h2>
+      </div>
     </footer>
   );
 }
