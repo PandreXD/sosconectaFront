@@ -85,4 +85,156 @@ button {
 .bannerOverlay h2 {
   font-size: 4rem;
   color: gold;
+}.container {
+  height: 77vh;
+  background: #041b3b;
+  color: white;
+}
+
+.texto {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.texto h2 {
+  font-size: 3rem;
+}
+
+.texto span {
+  color: orange;
+}
+
+.texto p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.card {
+  width: 60%;
+  margin: auto;
+  background: #0a2347;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+.image {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  padding: 30px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.content span {
+  color: orange;
+}
+
+/* 🔥 BOTÃO DO CARD (corrigido, não global) */
+.content button {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: white;
+  transition: 0.2s;
+}
+
+.content button:hover {
+  transform: scale(1.02);
+}
+
+/* ========================= */
+/* 🔥 MODAL */
+/* ========================= */
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  color: black;
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.modal h2 {
+  text-align: center;
+}
+
+/* inputs */
+.modal input,
+.modal select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* botões do modal */
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.botoes button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* confirmar */
+.botoes button:first-child {
+  background: green;
+  color: white;
+}
+
+/* cancelar */
+.botoes button:last-child {
+  background: red;
+  color: white;
+}
+
+/* animação */
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
